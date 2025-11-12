@@ -1,0 +1,77 @@
+###Register
+POST http://localhost:3001/api/auth/register
+Content-Type:  application/json
+
+{
+    "username":"Jeancy",
+    "email":"jeancympoy24@gmail.com",
+    "password":"Jeancy01@"
+}
+###Register
+POST http://localhost:3001/api/auth/login
+Content-Type:  application/json
+
+{
+    "email":"jeancympoy24@gmail.com",
+    "password":"Jeancy01@"
+}
+
+###Get All zusers
+GET  http://localhost:3001/api/auth/
+
+
+
+###Delete Users
+DELETE  http://localhost:3001/api/auth/681793ca6f472e1d87b3c6e7
+
+###Request code 
+POST http://localhost:3001/api/auth/request-code
+Content-Type:  application/json
+
+{
+    "email":"jeancympoy24@gmail.com"
+}
+
+###Register
+POST http://localhost:3001/api/auth/reset-password
+Content-Type:  application/json
+
+{
+    "email":"jeancympoy24@gmail.com",
+    "code":"128022",
+    "newPassword":"1234"
+}
+
+###CreateContacts
+
+POST  http://localhost:3001/api/contact/
+Content-Type:  application/json
+
+{
+    "name":"Jeancy Mpoyi",
+    "email":"jeancympoy24@gmail.com",
+    "description":"I like your  services"
+}
+
+
+
+### getContacts
+
+GET   http://localhost:3001/api/contact/
+
+
+
+### getContacts
+
+DELETE   http://localhost:3001/api/contact/681b3e39696a07c8beea84c1
+
+
+
+###Test  Pub
+POST  http://localhost:3001/api/
+
+{
+    "name": "Test Pub",
+    "imageUrl": "https://xyz.supabase.co/storage/v1/object/public/images/filename.jpg",
+    "price": 19.99
+}
