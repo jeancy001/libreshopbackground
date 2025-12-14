@@ -13,7 +13,7 @@ export const createOrRenewSubscription = async (req, res) => {
     const { planType } = req.body;
 
     // Prices for each plan
-    const planPrices = { Free: 3.5, Standard: 7.5, Premium: 13.5 };
+    const planPrices = { Free: 3.5, Standard: 9.5, Premium: 19.5 };
 
     // Normalize planType to match schema enum (capitalize first letter)
     const key = planType.charAt(0).toUpperCase() + planType.slice(1).toLowerCase();
