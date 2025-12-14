@@ -15,11 +15,41 @@ Content-Type:  application/json
     "email":"jeancympoy24@gmail.com",
     "password":"Jeancy01@"
 }
+#### Create subscription 
+POST http://localhost:3001/api/subscription/subscribe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MTMwYzg5YzEyZGI5ZDJhZGJkZjZkMiIsInVzZXJuYW1lIjoiSmVhbmN5IiwiZW1haWwiOiJqZWFuY3ltcG95MjRAZ21haWwuY29tIiwicHJvZmlsZVVybCI6Imh0dHBzOi8vZXBjZXpjaGd3dmNiemdpaGdtZXAuc3VwYWJhc2UuY28vc3RvcmFnZS92MS9vYmplY3QvcHVibGljL3Byb2R1Y3QtaW1hZ2VzLzE3NjI4NTg3NDQ3NzEuanBnIiwiYWRkcmVzcyI6W3sidHlwZSI6IiIsImNpdHkiOiIiLCJzdHJlZXQiOiIiLCJwb3N0YWxDb2RlIjoiIiwiY291bnRyeSI6IiIsIl9pZCI6IjY5MTMxNmZhNTlhNmFjMmE5NWMyNjQ0MSJ9XSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzY1NzM5OTg1LCJleHAiOjE3NjYzNDQ3ODV9.YPBykoiEzZoyg2ZUfcGdz-g5vdpZaYY46x7dGj1kp2M
+Content-Type: application/json
+
+{
+  "planType": "Premium"
+}
+ 
+
+###Review Subscriptsion 
+
+POST http://localhost:3001/api/subscription/renew
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MTMwYzg5YzEyZGI5ZDJhZGJkZjZkMiIsInVzZXJuYW1lIjoiSmVhbmN5IiwiZW1haWwiOiJqZWFuY3ltcG95MjRAZ21haWwuY29tIiwicHJvZmlsZVVybCI6Imh0dHBzOi8vZXBjZXpjaGd3dmNiemdpaGdtZXAuc3VwYWJhc2UuY28vc3RvcmFnZS92MS9vYmplY3QvcHVibGljL3Byb2R1Y3QtaW1hZ2VzLzE3NjI4NTg3NDQ3NzEuanBnIiwiYWRkcmVzcyI6W3sidHlwZSI6IiIsImNpdHkiOiIiLCJzdHJlZXQiOiIiLCJwb3N0YWxDb2RlIjoiIiwiY291bnRyeSI6IiIsIl9pZCI6IjY5MTMxNmZhNTlhNmFjMmE5NWMyNjQ0MSJ9XSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzY1NzM5OTg1LCJleHAiOjE3NjYzNDQ3ODV9.YPBykoiEzZoyg2ZUfcGdz-g5vdpZaYY46x7dGj1kp2M
+Content-Type: application/json
+
+{
+  "planType": "Premium"
+}
+
+
 
 ###Get All zusers
 GET  http://localhost:3001/api/auth/
 
 
+
+
+
+
+###Gel all  subec
+
+GET http://localhost:3001/api/subscription/my-subscription
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MTMwYzg5YzEyZGI5ZDJhZGJkZjZkMiIsInVzZXJuYW1lIjoiSmVhbmN5IiwiZW1haWwiOiJqZWFuY3ltcG95MjRAZ21haWwuY29tIiwicHJvZmlsZVVybCI6Imh0dHBzOi8vZXBjZXpjaGd3dmNiemdpaGdtZXAuc3VwYWJhc2UuY28vc3RvcmFnZS92MS9vYmplY3QvcHVibGljL3Byb2R1Y3QtaW1hZ2VzLzE3NjI4NTg3NDQ3NzEuanBnIiwiYWRkcmVzcyI6W3sidHlwZSI6IiIsImNpdHkiOiIiLCJzdHJlZXQiOiIiLCJwb3N0YWxDb2RlIjoiIiwiY291bnRyeSI6IiIsIl9pZCI6IjY5MTMxNmZhNTlhNmFjMmE5NWMyNjQ0MSJ9XSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzY1NzM5OTg1LCJleHAiOjE3NjYzNDQ3ODV9.YPBykoiEzZoyg2ZUfcGdz-g5vdpZaYY46x7dGj1kp2M
+Content-Type: application/jso
 
 ###Delete Users
 DELETE  http://localhost:3001/api/auth/681793ca6f472e1d87b3c6e7

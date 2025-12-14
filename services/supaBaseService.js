@@ -27,6 +27,7 @@ export async function uploadToSupabase(file) {
       .upload(fileName, fileContent, {
         contentType: file.mimetype,
         duplex: "half",
+         upsert: true, 
       });
 
     if (error) {

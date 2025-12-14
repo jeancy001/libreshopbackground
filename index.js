@@ -9,6 +9,7 @@ import { userRouter } from "./routes/user.js"
 import { pubRouter } from "./routes/pub.js"
 import { orderRouter } from "./routes/order.js"
 import { contactRouter } from "./routes/contact.js"
+import { subcribeRouter } from "./routes/subcribes.js"
 
 const app  = express()
 
@@ -24,10 +25,12 @@ app.use("/api/product",productRouter);
 app.use("/api/pub",pubRouter)
 app.use("/api/order", orderRouter)
 
+//subscribers plan
+app.use("/api/subscription", subcribeRouter)
 app.use("/api/contact",contactRouter)
 
 
-app.get("/api/",(req, res)=>{
+app.get("/",(req, res)=>{
   res.json({message:"Api  works  ! "})
 })
 //error Handling 
